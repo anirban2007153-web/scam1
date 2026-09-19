@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.font-mono-tech {
+  font-family: 'Chakra Petch', monospace, sans-serif;
+}
+
+.font-lcd {
+  font-family: 'VT323', monospace;
+}
+
+.retro-grid {
+  background-image: 
+    linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.lcd-screen {
+  background-color: #8fa382;
+  color: #1a2617;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.5);
+  font-family: 'VT323', monospace;
+}
+
+.lcd-screen.alert-state {
+  background-color: #fca5a5;
+  color: #3b0707;
+  box-shadow: inset 0 0 15px rgba(225, 29, 72, 0.45);
+  animation: alertFlash 0.35s ease-in-out;
+}
+
+@keyframes alertFlash {
+  0% { opacity: 0.8; transform: scale(0.99); }
+  50% { opacity: 1; transform: scale(1.01); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.glow-cyan {
+  box-shadow: 0 0 25px -4px rgba(6, 182, 212, 0.35);
+}
+
+.glow-danger {
+  box-shadow: 0 0 25px -3px rgba(244, 63, 94, 0.28);
+}
+
+.glow-amber {
+  box-shadow: 0 0 25px -3px rgba(245, 158, 11, 0.28);
+}
+
+.glow-safe {
+  box-shadow: 0 0 25px -3px rgba(16, 185, 129, 0.25);
+}

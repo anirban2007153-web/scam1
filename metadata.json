@@ -1,0 +1,6 @@
+{
+  "name": "ScamShield - Verified Dual-Mode Prototype",
+  "description": "Dual-mode cybersecurity prototype for analyzing suspicious SMS messages with heuristic indicators across Smartphone Web Dashboard and simulated 2G Keypad Phone modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
